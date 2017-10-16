@@ -1,0 +1,133 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+hook_add = '''
+  let g:python3_host_prog = '/usr/local/bin/python3'
+  let g:python3_host_skip_check = 1
+  filetype plugin indent on
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+depends = 'Shougo/neomru.vim'
+on_event = 'BufRead'
+hook_add = '''
+noremap [Denite] <Nop>
+nmap ; [Denite]
+nnoremap [Denite]t :<C-u>Denite filetype<CR>
+nnoremap [Denite]f :<C-u>Denite file_rec<CR>
+nnoremap [Denite]l :<C-u>Denite line<CR>
+nnoremap [Denite]b :<C-u>Denite buffer<CR>
+nnoremap [Denite]g :<C-u>Denite grep<CR>
+nnoremap [Denite]] :<C-u>DeniteCursorWord grep<CR>
+nnoremap [Denite]r :<C-u>Denite file_mru<CR>
+nnoremap [Denite]h :<C-u>Denite help<CR>
+'''
+hook_post_source = '''
+call denite#custom#var('file_rec', 'command',
+\ ['rg', '--follow', '--nocolor', '--nogroup', '--hidden', '-g', ''])
+call denite#custom#var('grep', 'command',
+\ ['rg', '--nogroup', '--nocolor', '--smart-case', '--hidden'])
+call denite#custom#var('grep', 'default_opts', [])
+call denite#custom#var('grep', 'recursive_opts', [])
+'''
+
+[[plugins]]
+repo = 'zchee/deoplete-go'
+build = 'make'
+on_i = 1
+on_ft = 'go'
+depends = 'Shougo/deoplete.nvim' 
+hook_source = '''
+  let g:deoplete#sources#go#gocode_binary = $HOME . '/go/bin/gocode'
+  let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
+'''
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim' 
+on_i = 1
+hook_source = '''
+  let g:deoplete#enable_at_startup = 1
+'''
+
+[[plugins]]
+repo = 'fatih/vim-go'
+hook_post_source = '''
+  let g:go_bin_path = $GOPATH . '/bin'
+
+  let g:go_highlight_functions = 1
+  let g:go_highlight_methods = 1
+  let g:go_highlight_structs = 1
+
+  au Filetype go nmap <Leader>r :call GoRun()<CR>
+  au FileType go nmap <Leader>b <Plug>(go-build)
+  au FileType go nmap <Leader>t <Plug>(go-test)
+  au FileType go nmap <Leader>c <Plug>(go-coverage)
+  au FileType go nmap <Leader>dd <Plug>(go-def)
+  au FileType go nmap <Leader>ds <Plug>(go-def-split)
+  au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
+  au FileType go nmap <Leader>dt <Plug>(go-def-tab)
+  au FileType go nmap <Leader>db <Plug>(go-def-pop)
+  au FileType go nmap <Leader>gd <Plug>(go-doc)
+  au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
+  au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
+  au FileType go nmap <Leader>s <Plug>(go-implements)
+  au FileType go nmap <Leader>i <Plug>(go-info)
+  au FileType go nmap <Leader>e <Plug>(go-rename)
+
+   function! GoRun()
+    :w 
+    :GoRun
+   endfun
+'''
+
+[[plugins]]
+repo = 'w0rp/ale'
+
+[[plugins]]
+repo = 'flazz/vim-colorschemes'
+hook_add = '''
+  colorscheme molokai
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline' 
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+  map <C-> :NERDTreeToggle<CR>
+  let NERDTreeShowHidden=1
+'''
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'sbdchd/neoformat'
+hook_add = '''
+    augroup fmt
+      autocmd!
+      autocmd BufWritePre * undojoin | Neoformat
+    augroup END
+'''
+
+[[plugins]]
+repo = 'terryma/vim-multiple-cursors'
+hook_add='''
+function! Multiple_cursors_before()
+  if exists(':deoplete_disable_auto_complete')==2
+    exe 'deoplete_disable_auto_complete'
+  endif
+endfunction
+
+function! Multiple_cursors_after()
+  if exists('::deoplete_enable_auto_complete')==2
+    exe ':deoplete_enable_auto_complete'
+  endif
+endfunction
+'''
