@@ -56,6 +56,14 @@ hook_source = '''
 '''
 
 [[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_source = '''
+  map <C-t> :NERDTreeToggle<CR>
+  let NERDTreeShowHidden=1
+'''
+
+
+[[plugins]]
 repo = 'fatih/vim-go'
 hook_post_source = '''
   let g:go_bin_path = $GOPATH . '/bin'
@@ -63,7 +71,8 @@ hook_post_source = '''
   let g:go_highlight_functions = 1
   let g:go_highlight_methods = 1
   let g:go_highlight_structs = 1
-
+'''
+hook_source = '''
   au Filetype go nmap <Leader>r :call GoRun()<CR>
   au FileType go nmap <Leader>b <Plug>(go-build)
   au FileType go nmap <Leader>t <Plug>(go-test)
@@ -81,7 +90,7 @@ hook_post_source = '''
   au FileType go nmap <Leader>e <Plug>(go-rename)
 
    function! GoRun()
-    :w 
+    :w
     :GoRun
    endfun
 '''
@@ -97,12 +106,6 @@ hook_add = '''
 
 [[plugins]]
 repo = 'vim-airline/vim-airline' 
-[[plugins]]
-repo = 'scrooloose/nerdtree'
-hook_add = '''
-  map <C-> :NERDTreeToggle<CR>
-  let NERDTreeShowHidden=1
-'''
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
