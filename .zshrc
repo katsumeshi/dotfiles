@@ -17,6 +17,8 @@ zplug "tarruda/zsh-autosuggestions"
 zplug "plugins/git",   from:oh-my-zsh
 zplug mafredri/zsh-async, from:github
 zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
+zplug "b4b4r07/enhancd", use:init.sh
+
 
 # Install packages that have not been installed yet
 if ! zplug check --verbose; then
