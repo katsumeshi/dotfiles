@@ -82,17 +82,10 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=241'
 
 if [ -f ~/.zplug/repos/hchbaw/auto-fu.zsh/auto-fu.zsh ]; then
     source ~/.zplug/repos/hchbaw/auto-fu.zsh/auto-fu.zsh
-    function zle-line-init () {
-        auto-fu-init
-    }
-    zle -N zle-line-init
-    compinit
-    zstyle ':completion:*' completer _oldlist _complete
-    zstyle ':completion:*:default' menu select=2
-    zstyle ':auto-fu:highlight' completion/one fg=white,bold,underline
-    zstyle ':auto-fu:highlight' completion fg=black,bold
+  function zle-line-init () {
+    auto-fu-init
+  }
+  zle -N zle-line-init
+  zstyle ':completion:*' completer _oldlist _complete
+  zstyle ':completion:*' menu select
 fi
-
-
-#autoload -U compinit
-
