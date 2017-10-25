@@ -18,7 +18,7 @@ zplug "plugins/git",   from:oh-my-zsh
 zplug "mafredri/zsh-async", from:github
 zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
 zplug "b4b4r07/enhancd", use:init.sh
-zplug "hchbaw/auto-fu.zsh"
+zplug "zsh-users/zsh-completions"
 
 # Install packages that have not been installed yet
 if ! zplug check --verbose; then
@@ -78,14 +78,7 @@ FZF-EOF"
 }
 
 autoload -U promptinit; promptinit
+zstyle ':completion:*' menu select
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=241'
+setopt NO_beep
 
-if [ -f ~/.zplug/repos/hchbaw/auto-fu.zsh/auto-fu.zsh ]; then
-    source ~/.zplug/repos/hchbaw/auto-fu.zsh/auto-fu.zsh
-  function zle-line-init () {
-    auto-fu-init
-  }
-  zle -N zle-line-init
-  zstyle ':completion:*' completer _oldlist _complete
-  zstyle ':completion:*' menu select
-fi
