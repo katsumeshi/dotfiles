@@ -64,6 +64,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
+alias rna="~/Library/Android/sdk/platform-tools/adb reverse tcp:8081 tcp:8081"
 
 # fshow - git commit browser
 fshow() {
