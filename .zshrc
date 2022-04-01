@@ -68,8 +68,8 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 alias rna="~/Library/Android/sdk/platform-tools/adb reverse tcp:8081 tcp:8081"
-alias grmm="git branch --merged|egrep -v '\*|dev|master'|xargs git branch -d"
-alias grmm="git branch |egrep -v '\*|dev|staging|master'|xargs git branch -D"
+alias gbrmm="git branch --merged|egrep -v '\*|dev|staging|master'|xargs git branch -d"
+alias gbrm="git branch |egrep -v '\*|dev|staging|master'|xargs git branch -D"
 
 # fshow - git commit browser
 fshow() {
