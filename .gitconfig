@@ -1,0 +1,13 @@
+
+
+[alias]
+[core]
+	editor = nvim
+	pager = less
+[color]
+      ui = true
+[user]
+	name = Yuki Matsushita
+	email = katsumeshi@gmail.com
+[github]
+	user = katsumeshi
