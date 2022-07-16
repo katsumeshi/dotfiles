@@ -1,13 +1,14 @@
 #!/bin/sh
 
 echo "Installing Brew..."
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+which brew >/dev/null 2>&1 || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+echo "Cloning dotfiles..."
+git clone git@github.com:katsumeshi/dotfiles.git ~/dotfiles
 
 echo "Installing brew packages..."
 brew bundle --file ./Brewfile
 
-echo "Cloning dotfiles..."
-git clone git@github.com:katsumeshi/dotfiles.git ~/dotfiles
 
 LIBRARY_DIR="$HOME/Library"
 PREFERENCE_DIR="$LIBRARY_DIR/Preferences"
