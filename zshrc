@@ -12,8 +12,8 @@ alias md='mkdir -p'
 alias rd='rmdir'
 alias nc='rm -rf node_modules && npm install'
 alias ni='npm install'
-alias hg='history 0 | grep --color=auto'
-alias ag='alias | grep --color=auto'
+alias hg='history 0 | rg --color=auto'
+alias ag='alias | rg --color=auto'
 
 # 1 charactor
 alias a='alias'
@@ -56,5 +56,19 @@ alias grep='ripgrep'
 alias sed='sd'
 alias vim='nvim'
 alias ls='exa'
+
+# zsh-completions
+if type brew &>/dev/null; then
+FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+# zsh-autosuggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# zsh-syntax-highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+autoload -Uz compinit
+compinit
+fi
+
+
 
 eval "$(starship init zsh)"
