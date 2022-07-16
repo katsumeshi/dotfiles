@@ -1,7 +1,5 @@
 # Install
 
-clone repo
-
 ```
-sh ./install.sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/katsumeshi/dotfiles/master/install)"
 ```
