@@ -34,12 +34,16 @@ alias ga='git add'
 alias gd='git diff'
 alias gs='git status'
 alias gp='git push'
+alias gpf='git push --force-with-lease'
+alias gl='git pull'
+alias glr='git pull --rebase'
 alias gb='git branch'
-alias gst='git status'
+alias gs='git status'
 alias gco='git checkout'
-alias gpf='git push --force'
 alias gf='git fetch'
 alias gc='git commit'
+alias gt='git t'
+alias gta='git ta'
 
 # cd
 alias ..='cd ..'
@@ -51,7 +55,7 @@ alias ......='cd ../../../../..'
 
 # altnatives
 alias cat='bat'
-alias find='bat'
+alias find='fd'
 alias grep='ripgrep'
 alias sed='sd'
 alias vim='nvim'
@@ -65,10 +69,10 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # zsh-syntax-highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-autoload -Uz compinit
-compinit
+autoload -Uz compinit && compinit -u
 fi
 
 
-
 eval "$(starship init zsh)"
+
+echo ">> reloaded zshrc <<"
