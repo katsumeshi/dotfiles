@@ -39,6 +39,8 @@ cask "alfred"
 cask "kindle"
 cask "swish"
 cask "notion"
+cask "bitwarden"
+
 
 
 # fonts
