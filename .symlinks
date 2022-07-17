@@ -1,1 +1,17 @@
-/Users/katsumeshi/dotfiles/.symlinks
+DOTFILES_PATH="$HOME/dotfiles"
+LIBRARY_DIR="$HOME/Library"
+PREFERENCE_DIR="$LIBRARY_DIR/Preferences"
+VSCODE_PREFS_DIR="$LIBRARY_DIR/Application Support/Code/User"
+CONFIG_DIR="$HOME/.config"
+
+mkdir -p $VSCODE_PREFS_DIR
+mkdir -p $CONFIG_DIR
+
+ln -sf $DOTFILES_PATH/vscode/settings.json "$VSCODE_PREFS_DIR/settings.json"
+ln -sf $DOTFILES_PATH/iterm2/com.googlecode.iterm2.plist "$PREFERENCE_DIR/com.googlecode.iterm2.plist"
+ln -sf $DOTFILES_PATH/config/starship.toml "$CONFIG_DIR/starship.toml"
+
+for file in .??*; do
+    ln -sf ${DOTFILES_PATH}/${file} ${HOME}/${file}
+    echo "symbolic link: ${PWD}/${file} -> ${HOME}/${file}"
+done

@@ -1,1 +1,78 @@
-/Users/katsumeshi/dotfiles/.macos
+# Keyboard
+defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+defaults write NSGlobalDomain com.apple.keyboard.fnState -bool true
+
+# remove input source
+defaults delete com.apple.HIToolbox AppleEnabledInputSources
+# set input source
+defaults write com.apple.HIToolbox AppleEnabledInputSources -array-add \
+'(
+        {
+        InputSourceKind = "Keyboard Layout";
+        "KeyboardLayout ID" = 29;
+        "KeyboardLayout Name" = Canadian;
+    },
+        {
+        "Bundle ID" = "com.apple.inputmethod.Kotoeri.RomajiTyping";
+        "Input Mode" = "com.apple.inputmethod.Japanese";
+        InputSourceKind = "Input Mode";
+    },
+        {
+        "Bundle ID" = "com.apple.inputmethod.Kotoeri.RomajiTyping";
+        InputSourceKind = "Keyboard Input Method";
+    }
+)'
+
+# Trackpad
+defaults write .GlobalPreferences com.apple.trackpad.forceClick 0
+defaults write -g com.apple.mouse.tapBehavior -int 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture 2
+defaults write .GlobalPreferences com.apple.trackpad.scaling 3
+defaults write .GlobalPreferences com.apple.swipescrolldirection -bool true
+defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 0
+defaults write com.apple.AppleMultitouchTrackpad SecondClickThreshold -int 0
+
+# Trackpad: map bottom right corner to right-click
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
+
+# Trackpad: Tab to click
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+
+# Dock
+defaults write com.apple.dock orientation -string "bottom"
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock launchanim -bool false
+defaults write com.apple.dock tilesize -int 48
+defaults write com.apple.dock "autohide-time-modifier" -float "0"
+defaults write com.apple.dock "autohide-delay" -float "0"
+
+# Finder
+defaults write NSGlobalDomain "AppleShowAllExtensions" -bool "true"
+defaults write com.apple.Finder "AppleShowAllFiles" -bool "true"
+defaults write com.apple.finder "FXEnableExtensionChangeWarning" -bool "false"
+defaults write NSGlobalDomain "NSToolbarTitleViewRolloverDelay" -float "0"
+defaults write com.apple.finder ShowTabView -bool true 
+defaults write com.apple.finder ShowStatusBar -bool true 
+defaults write com.apple.finder ShowPathbar -bool true 
+defaults write com.apple.finder QLEnableTextSelection -bool true  
+defaults write com.apple.finder AnimateWindowZoom -bool false
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true 
+
+# etc
+defaults write com.apple.CrashReporter DialogType -string "none" 
+defaults write com.apple.dashboard mcx-disabled -bool true
+defaults write com.apple.menuextra.clock "DateFormat" -string "\"EEE d MMM HH:mm:ss\"" 
+defaults write com.apple.appleseed.FeedbackAssistant "Autogather" -bool "false" 
+
+# Show battery percentage
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist BatteryShowPercentage -bool true
+
+killall Dock
+killall Finder
+killall cfprefsd
+killall SystemUIServer
