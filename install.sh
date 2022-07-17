@@ -5,8 +5,17 @@ if [[ "$(uname -m)" == arm64 ]]; then
   softwareupdate --install-rosetta --agree-to-license
 fi
 
-echo "Installing Brew..."
-which brew >/dev/null 2>&1 || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# Setup Homebrew
+if [ -x "$(command -v brew)" ]; then
+  brew update
+else
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  if [[ "$(uname -m)" == arm64 ]]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+  elif [[ "$(uname -m)" == x86_64 ]]; then
+    eval "$(/usr/local/bin/brew shellenv)"
+  fi
+fi
 
 echo "Cloning dotfiles..."
 git clone git@github.com:katsumeshi/dotfiles.git ~/dotfiles
