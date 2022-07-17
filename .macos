@@ -1,6 +1,28 @@
 # Keyboard
 defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
+defaults write NSGlobalDomain com.apple.keyboard.fnState -bool true
+
+# remove input source
+defaults delete com.apple.HIToolbox AppleEnabledInputSources
+# set input source
+defaults write com.apple.HIToolbox AppleEnabledInputSources -array-add \
+'(
+        {
+        InputSourceKind = "Keyboard Layout";
+        "KeyboardLayout ID" = 29;
+        "KeyboardLayout Name" = Canadian;
+    },
+        {
+        "Bundle ID" = "com.apple.inputmethod.Kotoeri.RomajiTyping";
+        "Input Mode" = "com.apple.inputmethod.Japanese";
+        InputSourceKind = "Input Mode";
+    },
+        {
+        "Bundle ID" = "com.apple.inputmethod.Kotoeri.RomajiTyping";
+        InputSourceKind = "Keyboard Input Method";
+    }
+)'
 
 # Trackpad
 defaults write .GlobalPreferences com.apple.trackpad.forceClick 0
