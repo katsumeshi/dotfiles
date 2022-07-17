@@ -19,7 +19,12 @@ else
 fi
 
 echo "Cloning dotfiles..."
-git clone git@github.com:katsumeshi/dotfiles.git ~/dotfiles
+# Setup .dotfiles
+if [ -d ~/dotfiles ]; then
+  pushd ~/dotfiles; git pull; popd
+else  
+  git clone git@github.com:katsumeshi/dotfiles.git ~/dotfiles
+fi
 
 echo "Installing brew packages..."
 brew bundle --file ~/dotfiles/Brewfile
