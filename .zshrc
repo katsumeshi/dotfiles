@@ -14,6 +14,9 @@ alias nc='rm -rf node_modules && npm install'
 alias ni='npm install'
 alias hg='history 0 | rg --color=auto'
 alias ag='alias | rg --color=auto'
+alias rmac='source ~/.macos'
+alias rsym='source ~/.symlinks'
+alias rall='rsym && r && rmac'
 
 # 1 charactor
 alias a='alias'
