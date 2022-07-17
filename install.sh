@@ -13,6 +13,7 @@ else
   if [[ "$(uname -m)" == arm64 ]]; then # M1
     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
+    echo "⚠️ You might reboot the machine... if brew is not found"
   elif [[ "$(uname -m)" == x86_64 ]]; then # Intel
     eval "$(/usr/local/bin/brew shellenv)"
   fi

@@ -2,7 +2,7 @@
 tap 'homebrew/cask'
 tap "homebrew/cask-fonts"
 
-cask_args appdir: "~/Applications", require_sha: true
+cask_args appdir: "~/Applications"
 
 # develop
 brew "git"
