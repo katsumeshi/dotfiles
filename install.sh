@@ -22,7 +22,7 @@ echo "Cloning dotfiles..."
 git clone git@github.com:katsumeshi/dotfiles.git ~/dotfiles
 
 echo "Installing brew packages..."
-brew bundle --file ./Brewfile
+brew bundle --file ~/dotfiles/Brewfile
 
 
 LIBRARY_DIR="$HOME/Library"
