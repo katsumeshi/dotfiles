@@ -10,9 +10,10 @@ if [ -x "$(command -v brew)" ]; then
   brew update
 else
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  if [[ "$(uname -m)" == arm64 ]]; then
+  if [[ "$(uname -m)" == arm64 ]]; then # M1
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
-  elif [[ "$(uname -m)" == x86_64 ]]; then
+  elif [[ "$(uname -m)" == x86_64 ]]; then # Intel
     eval "$(/usr/local/bin/brew shellenv)"
   fi
 fi
