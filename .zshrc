@@ -1,4 +1,5 @@
 export TERM="xterm-256color"
+export DOTFILES_PATH=$HOME/dotfiles
 
 
 # alias ------------------------

@@ -69,6 +69,10 @@ defaults write com.apple.dashboard mcx-disabled -bool true
 defaults write com.apple.menuextra.clock "DateFormat" -string "\"EEE d MMM HH:mm:ss\"" 
 defaults write com.apple.appleseed.FeedbackAssistant "Autogather" -bool "false" 
 
+# iterm2
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$DOTFILES_PATH"
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
 # Show battery percentage
 defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist BatteryShowPercentage -bool true
 

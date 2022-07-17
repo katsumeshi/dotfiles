@@ -1,6 +1,4 @@
 # #!/bin/sh
-
-
 DOTFILES_PATH=$HOME/dotfiles
 
 # Install Rosseta2
