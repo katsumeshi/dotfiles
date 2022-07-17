@@ -1,5 +1,5 @@
 # #!/bin/sh
-DOTFILES_PATH=$HOME/dotfiles
+DOTFILES_PATH="$HOME/dotfiles"
 
 # Install Rosseta2
 if [[ "$(uname -m)" == arm64 ]]; then
@@ -33,4 +33,4 @@ brew bundle --file $DOTFILES_PATH/Brewfile
 
 zsh $DOTFILES_PATH/.symlinks
 
-source $HOME/.zshrc
+echo 'Set up is done. Restart your terminal'

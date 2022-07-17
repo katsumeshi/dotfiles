@@ -67,15 +67,15 @@ alias ls='exa'
 
 # zsh-completions
 if type brew &>/dev/null; then
-FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-# zsh-autosuggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-# zsh-syntax-highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 
-autoload -Uz compinit && compinit -u
+    # zsh-autosuggestions
+    source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+    # zsh-syntax-highlighting
+    source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+    autoload -Uz compinit && compinit -u
 fi
-
 
 eval "$(starship init zsh)"
 
