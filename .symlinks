@@ -7,5 +7,5 @@ ln -sf $DOTFILES_PATH/iterm2/com.googlecode.iterm2.plist "$PREFERENCE_DIR/com.go
 
 for file in .??*; do
     ln -sf ${PWD}/${file} ${HOME}/${file}
-    echo ${PWD}/${file} ${HOME}/${file}
+    echo "symbolic link: ${PWD}/${file} -> ${HOME}/${file}"
 done
