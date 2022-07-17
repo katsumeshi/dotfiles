@@ -1,7 +1,5 @@
 # #!/bin/sh
-
-
-DOTFILES_PATH=$HOME/dotfiles
+DOTFILES_PATH="$HOME/dotfiles"
 
 # Install Rosseta2
 if [[ "$(uname -m)" == arm64 ]]; then
