@@ -31,6 +31,10 @@ fi
 # Brew
 brew bundle --file $DOTFILES_PATH/Brewfile
 
+if [ -x "$(command -v volta)" ]; then
+  volta setup
+fi
+
 zsh $DOTFILES_PATH/.symlinks
 
 echo 'Set up is done. Restart your terminal'
