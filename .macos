@@ -48,6 +48,10 @@ defaults write com.apple.dashboard mcx-disabled -bool true
 defaults write com.apple.menuextra.clock "DateFormat" -string "\"EEE d MMM HH:mm:ss\"" 
 defaults write com.apple.appleseed.FeedbackAssistant "Autogather" -bool "false" 
 
+
+defaults write com.apple.screencapture location $SCREENSHOTS_PATH
+mkdir $SCREENSHOTS_PATH
+
 # iterm2
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$DOTFILES_PATH/iterm2"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
