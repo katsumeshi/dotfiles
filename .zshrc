@@ -61,7 +61,7 @@ alias ......='cd ../../../../..'
 # altnatives
 alias cat='bat'
 alias find='fd'
-alias grep='ripgrep'
+alias grep='rg'
 alias sed='sd'
 alias vim='nvim'
 alias ls='exa'
