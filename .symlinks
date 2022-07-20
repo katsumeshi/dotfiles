@@ -6,6 +6,7 @@ mkdir -p $VSCODE_PREFS_DIR
 mkdir -p $CONFIG_DIR
 
 ln -sf $DOTFILES_PATH/vscode/settings.json "$VSCODE_PREFS_DIR/settings.json"
+ln -sf $DOTFILES_PATH/vscode/keybindings.json "$VSCODE_PREFS_DIR/keybindings.json"
 ln -sf $DOTFILES_PATH/config/starship.toml "$CONFIG_DIR/starship.toml"
 
 ln -sf ~/dotfiles/.??* ~/.

@@ -40,7 +40,7 @@ cask "kindle"
 cask "swish"
 cask "notion"
 cask "bitwarden"
-
+brew "hugo"
 
 
 # fonts
