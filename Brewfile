@@ -41,6 +41,7 @@ cask "swish"
 cask "notion"
 cask "bitwarden"
 brew "hugo"
+brew "stats"
 
 
 # fonts
