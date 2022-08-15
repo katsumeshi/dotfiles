@@ -40,9 +40,11 @@ cask "kindle"
 cask "swish"
 cask "notion"
 cask "bitwarden"
-brew "hugo"
 brew "stats"
 
+# blog
+brew "hugo"
+brew "go"
 
 # fonts
 cask "font-hack-nerd-font"
