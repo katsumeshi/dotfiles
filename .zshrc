@@ -1,7 +1,15 @@
 export TERM="xterm-256color"
 export DOTFILES_PATH=$HOME/dotfiles
 export SCREENSHOTS_PATH=$HOME/screenshots
+export HISTSIZE=1000000000
+export SAVEHIST=$HISTSIZE
+setopt EXTENDED_HISTORY
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
+# work -------------------------
+
+export GH_TOKEN=$(gcloud secrets versions access latest --secret="AO-Github" --project=agents-only-dev)
 
 # alias ------------------------
 
@@ -80,5 +88,3 @@ fi
 eval "$(starship init zsh)"
 
 echo ">> reloaded zshrc <<"
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
