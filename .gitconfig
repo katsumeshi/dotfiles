@@ -4,12 +4,12 @@
 	ta = log --graph  --all --abbrev-commit --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 	unstage = reset HEAD --
 [core]
-	editor = nvim
+	editor = vscode --wait
 	pager = less
 [gui]
 	encoding = utf-8
 [color]
-  ui = auto
+    ui = auto
 [user]
 	name = Yuki Matsushita
 	email = katsumeshi@gmail.com
@@ -18,10 +18,4 @@
 [merge]
 	ff = no
 [pull]
-  ff = only
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+    ff = only
