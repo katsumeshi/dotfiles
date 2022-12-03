@@ -4,7 +4,7 @@
 	ta = log --graph  --all --abbrev-commit --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 	unstage = reset HEAD --
 [core]
-	editor = vscode --wait
+	editor = code --wait
 	pager = less
 [gui]
 	encoding = utf-8
