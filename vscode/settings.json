@@ -7,5 +7,7 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Night Owl",
+  "tabnine.experimentalAutoImports": true
 }
