@@ -156,5 +156,3 @@ fi
 
 
 eval "$(starship init zsh)"
-
-echo ">> reloaded zshrc <<"

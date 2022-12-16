@@ -14,6 +14,7 @@ brew "google-cloud-sdk"
 cask "visual-studio-code"
 cask "postman"
 cask "iterm2"
+cask "warp"
 
 # zsh
 brew "zsh-completions"
