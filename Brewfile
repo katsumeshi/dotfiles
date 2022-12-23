@@ -9,19 +9,20 @@ brew "git"
 brew "neovim"
 brew "volta"
 brew "tree"
-brew "starship"
 brew "google-cloud-sdk"
 cask "visual-studio-code"
 cask "postman"
+
+# terminal
 cask "iterm2"
-cask "warp"
+brew "starship"
+brew "fish"
+brew "fzf"
+brew "fisher"
+brew "peco"
 
-# zsh
-brew "zsh-completions"
-brew "zsh-autosuggestions"
-brew "zsh-syntax-highlighting"
 
-# altnative
+# altnatives
 brew "bat"
 brew "fd"
 brew "ripgrep"
