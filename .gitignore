@@ -1,2 +1,9 @@
 .DS_Store
 Brewfile.lock.json
+
+.config/gcloud/
+.config/iterm2/
+.config/fish/completions
+.config/fish/conf.d
+.config/fish/functions
+.config/fish/fish_variables

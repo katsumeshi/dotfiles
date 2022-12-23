@@ -12,7 +12,7 @@ if [ -x "$(command -v brew)" ]; then
 else
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   if [[ "$(uname -m)" == arm64 ]]; then # M1
-    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+#   echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
     echo "⚠️ You might reboot the machine... if brew is not found"
   elif [[ "$(uname -m)" == x86_64 ]]; then # Intel
@@ -20,6 +20,9 @@ else
   fi
 fi
 
+sudo echo /opt/homebrew/bin/fish >> /etc/shells
+chsh -s /opt/homebrew/bin/fish
+fish_add_path /opt/homebrew/bin
 
 # Setup .dotfiles
 if [ -d $DOTFILES_PATH ]; then
@@ -35,6 +38,6 @@ if [ -x "$(command -v volta)" ]; then
   volta setup
 fi
 
-zsh $DOTFILES_PATH/.symlinks
+sh $DOTFILES_PATH/.symlinks
 
 echo 'Set up is done. Restart your terminal'
