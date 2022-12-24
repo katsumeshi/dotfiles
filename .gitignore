@@ -8,3 +8,4 @@ Brewfile.lock.json
 .config/fish/functions
 .config/fish/fish_variables
 .config/configstore
+.config/nvim/plugin/
