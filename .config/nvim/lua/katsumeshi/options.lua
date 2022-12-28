@@ -1,14 +1,32 @@
-vim.opt.nu = true
-vim.opt.relativenumber = true
+local opt = vim.opt
 
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
+opt.number = true
+opt.relativenumber = true
 
-vim.opt.wrap = false
+opt.tabstop = 2
+opt.shiftwidth = 2
+opt.expandtab = true
 
-vim.opt.autoindent = true
-vim.opt.smartindent = true
+opt.wrap = false
 
-vim.opt.backup = false
+opt.autoindent = true
+opt.smartindent = true
+
+opt.backup = false
+
+opt.ignorecase = true
+opt.smartcase = true
+
+opt.cursorline = true
+
+opt.termguicolors = true
+opt.background = "dark"
+opt.signcolumn = "yes"
+
+opt.backspace = "indent,eol,start"
+
+opt.clipboard:append("unnamedplus")
+
+opt.splitright = true
+opt.splitbelow = true
 
