@@ -27,10 +27,12 @@ end
 return packer.startup(function(use)
 	use('wbthomason/packer.nvim')
 
+  -- fuzzy finder
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.0',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
+  use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 
   -- color scheme
   use("EdenEast/nightfox.nvim" )
@@ -40,6 +42,17 @@ return packer.startup(function(use)
 	use('nvim-lualine/lualine.nvim')
 	use('kyazdani42/nvim-web-devicons')
   use('christoomey/vim-tmux-navigator')
+
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end
+  }
+
+  use {
+    'nvim-tree/nvim-tree.lua'
+  }
 
   if packer_bootstrap then
     require('packer').sync()
