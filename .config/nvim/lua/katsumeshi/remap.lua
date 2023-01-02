@@ -35,4 +35,4 @@ map.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current chan
 -- restart lsp server
 map.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessar
 
-map.set("n", "<leader>t", "<cmd>ToggleTerm size=8 direction=horizontal<cr>")
+-- map.set("n", "<leader>t", "<cmd>ToggleTerm size=8 direction=horizontal<cr>")
