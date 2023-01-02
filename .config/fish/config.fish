@@ -8,7 +8,7 @@ set -U FZF_REVERSE_ISEARCH_OPTS "--reverse --height=100%"
 set -x ENHANCD_FILTER fzf
 
 # color scheme
-source ~/.config/fish/themes/nightfox.theme
+source ~/.config/fish/themes/nightfox.fish
 
 # geneal
 set -x TERM xterm-256color
