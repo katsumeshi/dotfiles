@@ -1,9 +1,8 @@
 .DS_Store
-Brewfile.lock.json
+**/.DS_Store
 
 .config/gcloud/
 .config/iterm2/
-.config/fish/completions
-.config/fish/conf.d
-.config/fish/functions
-.config/fish/fish_variables
+.config/fish/functions/
+.config/configstore
+.config/nvim/plugin/

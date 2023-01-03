@@ -20,6 +20,7 @@ brew "fish"
 brew "fzf"
 brew "fisher"
 brew "peco"
+brew "lazygit"
 
 
 # altnatives
@@ -34,7 +35,7 @@ cask "zoom"
 cask "slack"
 cask "figma"
 
-# daily
+# general 
 cask "spotify"
 cask "google-chrome"
 cask "alfred"
@@ -42,6 +43,7 @@ cask "kindle"
 cask "swish"
 cask "notion"
 cask "bitwarden"
+cask "maccy"
 brew "stats"
 
 # blog
