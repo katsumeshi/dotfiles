@@ -190,8 +190,7 @@
           }
         }
       },
-      "google-cloud-sdk": {
-      },
+      "google-cloud-sdk": {},
       "fish": {
         "version": "3.5.1",
         "bottle": {
@@ -612,8 +611,7 @@
           }
         }
       },
-      "stats": {
-      },
+      "stats": {},
       "hugo": {
         "version": "0.109.0",
         "bottle": {
@@ -1107,17 +1105,26 @@
             "appdir": "~/Applications"
           }
         }
+      },
+      "karabiner-elements": {
+        "version": "14.10.0",
+        "options": {
+          "full_name": "karabiner-elements",
+          "args": {
+            "appdir": "~/Applications"
+          }
+        }
       }
     }
   },
   "system": {
     "macos": {
       "monterey": {
-        "HOMEBREW_VERSION": "3.6.15",
+        "HOMEBREW_VERSION": "3.6.17",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "0df8b253884cc603999aa79bdadc60c2aab092f2",
+        "Homebrew/homebrew-core": "ff05df4a0003d46db237cac712eed1d417e6a16d",
         "CLT": "14.0.0.0.1.1661618636",
-        "Xcode": "14.0.1",
+        "Xcode": "13.4.1",
         "macOS": "12.6"
       },
       "ventura": {

@@ -46,6 +46,7 @@ cask "notion"
 cask "bitwarden"
 cask "maccy"
 brew "stats"
+cask "karabiner-elements"
 
 # blog
 brew "hugo"
