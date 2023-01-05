@@ -1119,14 +1119,16 @@
 			</dict>
 			<key>Selection Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.31764705882353</real>
+				<real>0.564697265625</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.23137254901960999</real>
+				<real>0.41387824578109944</real>
 				<key>Red Component</key>
-				<real>0.16862745098039</real>
+				<real>0.304191704839468</real>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
@@ -1155,6 +1157,8 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
+			<false/>
+			<key>Use Tab Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
