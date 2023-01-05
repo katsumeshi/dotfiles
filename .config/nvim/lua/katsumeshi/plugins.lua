@@ -49,9 +49,9 @@ return packer.startup(function(use)
 		end,
 	})
 
-	use({
-		"nvim-tree/nvim-tree.lua",
-	})
+	-- file explorder
+	use("nvim-telescope/telescope-file-browser.nvim")
+	use("nvim-tree/nvim-tree.lua")
 
 	-- autocompletion
 	use("hrsh7th/nvim-cmp") -- completion plugin
@@ -91,21 +91,13 @@ return packer.startup(function(use)
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
-	-- git integration
+	-- git
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand sid
 	use("f-person/git-blame.nvim")
-
-	use({
-		"sudormrfbin/cheatsheet.nvim",
-
-		requires = {
-			{ "nvim-telescope/telescope.nvim" },
-			{ "nvim-lua/popup.nvim" },
-			{ "nvim-lua/plenary.nvim" },
-		},
-	})
+	use("dinhhuy258/git.nvim")
 
 	use("akinsho/toggleterm.nvim")
+	use("akinsho/bufferline.nvim")
 
 	-- flutter
 	use("dart-lang/dart-vim-plugin")

@@ -21,10 +21,11 @@ map.set("n", "<leader>tp", ":tabn<CR>")
 map.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 
 -- telescope
-map.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
-map.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
-map.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
-map.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
+map.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
+map.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>")
+map.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
+map.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
+map.set("n", "<leader>fh", "<cmd>Telescope file_browser<cr>")
 
 -- telescope git commands
 map.set("n", "<leader>gc", "<cmd>Telescope git_commits<cr>") -- list all git commits (use <cr> to checkout) ["gc" for git commits]
@@ -34,5 +35,3 @@ map.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current chan
 
 -- restart lsp server
 map.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessar
-
--- map.set("n", "<leader>t", "<cmd>ToggleTerm size=8 direction=horizontal<cr>")
