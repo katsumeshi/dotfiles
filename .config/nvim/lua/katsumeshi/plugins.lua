@@ -93,6 +93,7 @@ return packer.startup(function(use)
 
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand sid
+	use("f-person/git-blame.nvim")
 
 	use({
 		"sudormrfbin/cheatsheet.nvim",
@@ -105,6 +106,10 @@ return packer.startup(function(use)
 	})
 
 	use("akinsho/toggleterm.nvim")
+
+	-- flutter
+	use("dart-lang/dart-vim-plugin")
+	use("thosakwe/vim-flutter")
 
 	if packer_bootstrap then
 		require("packer").sync()

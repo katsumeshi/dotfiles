@@ -21,6 +21,7 @@ brew "fzf"
 brew "fisher"
 brew "peco"
 brew "lazygit"
+brew "tmux"
 
 
 # altnatives
