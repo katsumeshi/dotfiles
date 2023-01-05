@@ -6,3 +6,8 @@
 .config/fish/functions/
 .config/configstore
 .config/nvim/plugin/
+
+.config/fish/conf.d/
+.config/fish/completions/
+.config/fish/fish_variables
+.config/karabiner
