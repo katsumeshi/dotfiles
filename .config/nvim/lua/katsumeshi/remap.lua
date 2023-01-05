@@ -25,7 +25,7 @@ map.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
 map.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>")
 map.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
 map.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
-map.set("n", "<leader>fh", "<cmd>Telescope file_browser<cr>")
+map.set("n", "<leader>fe", "<cmd>Telescope file_browser<cr>")
 
 -- telescope git commands
 map.set("n", "<leader>gc", "<cmd>Telescope git_commits<cr>") -- list all git commits (use <cr> to checkout) ["gc" for git commits]
