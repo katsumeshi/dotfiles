@@ -12,14 +12,14 @@ local code_actions = null_ls.builtins.code_actions
 -- to setup format on save
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
--- configure null_ls
 null_ls.setup({
-	-- setup formatters & linters
 	sources = {
-		--  to disable file types use
-		formatting.prettier, -- js/ts formatter
-		formatting.stylua, -- lua formatter
+		formatting.prettier,
+		formatting.stylua,
 		diagnostics.eslint_d,
+		diagnostics.codespell,
+		diagnostics.fish,
+		diagnostics.jsonlint,
 	},
 	-- configure format on save
 	on_attach = function(current_client, bufnr)

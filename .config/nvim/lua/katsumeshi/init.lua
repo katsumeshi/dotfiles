@@ -1,4 +1,4 @@
 require("katsumeshi.options")
 require("katsumeshi.plugins")
-require("katsumeshi.remap")
+require("katsumeshi.keymaps")
 require("katsumeshi.lspconfig")

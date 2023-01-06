@@ -11,3 +11,5 @@
 .config/fish/completions/
 .config/fish/fish_variables
 .config/karabiner/
+
+.config/flutter

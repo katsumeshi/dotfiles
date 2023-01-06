@@ -22,7 +22,7 @@ brew "fisher"
 brew "peco"
 brew "lazygit"
 brew "tmux"
-
+brew "codespell"
 
 # altnatives
 brew "bat"
