@@ -42,12 +42,7 @@ return packer.startup(function(use)
 	use("kyazdani42/nvim-web-devicons")
 	use("christoomey/vim-tmux-navigator")
 
-	use({
-		"numToStr/Comment.nvim",
-		config = function()
-			require("Comment").setup()
-		end,
-	})
+	use("numToStr/Comment.nvim")
 
 	-- file explorder
 	use("nvim-telescope/telescope-file-browser.nvim")

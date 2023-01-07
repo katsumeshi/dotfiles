@@ -2,10 +2,10 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "b6e7f0dd897483412fa59b8cd09cf08afd4e4675"
+        "revision": "a0889f471e763f4cdfe30da9e6d5ce0b72d721de"
       },
       "homebrew/cask-fonts": {
-        "revision": "b4a17b00cf50697234e232d9ffe5e66290e04ac5"
+        "revision": "da5281f48bb168eae3a6cca6e0954de563a6686f"
       }
     },
     "brew": {
@@ -190,7 +190,8 @@
           }
         }
       },
-      "google-cloud-sdk": {},
+      "google-cloud-sdk": {
+      },
       "fish": {
         "version": "3.5.1",
         "bottle": {
@@ -611,7 +612,8 @@
           }
         }
       },
-      "stats": {},
+      "stats": {
+      },
       "hugo": {
         "version": "0.109.0",
         "bottle": {
@@ -1179,7 +1181,7 @@
       "ventura": {
         "HOMEBREW_VERSION": "3.6.17",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "a33e79df19c5aff0a82839936a310dbb78e242b7",
+        "Homebrew/homebrew-core": "4343d06929a36fae4b9453fc817047564d9cab1e",
         "CLT": "14.2.0.0.1.1668646533",
         "Xcode": "14.0.1",
         "macOS": "13.1"

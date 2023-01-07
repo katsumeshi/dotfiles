@@ -6,7 +6,6 @@ cask_args appdir: "~/Applications"
 
 # develop
 brew "git"
-brew "neovim"
 brew "volta"
 brew "tree"
 brew "google-cloud-sdk"
@@ -23,6 +22,7 @@ brew "peco"
 brew "lazygit"
 brew "tmux"
 brew "codespell"
+brew "neovim"
 
 # altnatives
 brew "bat"
