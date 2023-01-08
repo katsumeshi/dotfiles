@@ -47,6 +47,7 @@ cask "bitwarden"
 cask "maccy"
 brew "stats"
 cask "karabiner-elements"
+cask "michaelvillar-timer"
 
 # blog
 brew "hugo"
