@@ -45,8 +45,14 @@ return packer.startup(function(use)
 	use("numToStr/Comment.nvim")
 
 	-- file explorder
-	use("nvim-telescope/telescope-file-browser.nvim")
-	use("nvim-tree/nvim-tree.lua")
+	use({
+		"nvim-neo-tree/neo-tree.nvim",
+		branch = "v2.x",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"MunifTanjim/nui.nvim",
+		},
+	})
 
 	-- autocompletion
 	use("hrsh7th/nvim-cmp") -- completion plugin
