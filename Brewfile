@@ -11,6 +11,7 @@ brew "tree"
 brew "google-cloud-sdk"
 cask "visual-studio-code"
 cask "postman"
+brew "git-delta"
 
 # terminal
 cask "iterm2"

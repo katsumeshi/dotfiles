@@ -54,7 +54,7 @@ alias m='mkdir'
 alias n='npm'
 alias h="history"
 alias r="source ~/.config/fish/config.fish"
-alias v='code'
+alias v='vim'
 # alias z="nvim ~/.zshrc"
 
 # git
