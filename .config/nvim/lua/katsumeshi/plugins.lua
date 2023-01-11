@@ -37,7 +37,7 @@ return packer.startup(function(use)
 	-- color scheme
 	use("EdenEast/nightfox.nvim")
 
-	--	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+	-- use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use("nvim-lualine/lualine.nvim")
 	use("kyazdani42/nvim-web-devicons")
 	use("christoomey/vim-tmux-navigator")
@@ -97,7 +97,7 @@ return packer.startup(function(use)
 	use("f-person/git-blame.nvim")
 	use("dinhhuy258/git.nvim")
 
-	use("akinsho/toggleterm.nvim")
+	-- use("akinsho/toggleterm.nvim")
 	use("akinsho/bufferline.nvim")
 
 	-- flutter
