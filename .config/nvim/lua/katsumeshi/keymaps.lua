@@ -48,3 +48,13 @@ map.set("n", "<leader>b6", "<Cmd>BufferLineGoToBuffer 6<CR>")
 map.set("n", "<leader>b7", "<Cmd>BufferLineGoToBuffer 7<CR>")
 map.set("n", "<leader>b8", "<Cmd>BufferLineGoToBuffer 8<CR>")
 map.set("n", "<leader>b9", "<Cmd>BufferLineGoToBuffer 9<CR>")
+
+-- navigator
+map.set("n", "<A-h>", "<Cmd>TmuxNavigateLeft<CR>")
+map.set("n", "<A-j>", "<Cmd>TmuxNavigateDown<CR>")
+map.set("n", "<A-k>", "<Cmd>TmuxNavigateUp<CR>")
+map.set("n", "<A-l>", "<Cmd>TmuxNavigateRight<CR>")
+map.set("n", "<A-Left>", "<Cmd>TmuxNavigateLeft<CR>")
+map.set("n", "<A-Down>", "<Cmd>TmuxNavigateDown<CR>")
+map.set("n", "<A-Up>", "<Cmd>TmuxNavigateUp<CR>")
+map.set("n", "<A-Right>", "<Cmd>TmuxNavigateRight<CR>")
