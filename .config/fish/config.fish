@@ -48,7 +48,7 @@ alias a='alias'
 alias c="clear"
 alias f="find . -iname"
 alias g='git'
-alias l='ls -lah'
+alias l='lfcd'
 alias p='pwd'
 alias m='mkdir'
 alias n='npm'
@@ -56,6 +56,14 @@ alias h="history"
 alias r="source ~/.config/fish/config.fish"
 alias v='vim'
 # alias z="nvim ~/.zshrc"
+
+# tmux
+alias ta='tmux attach -t'
+alias ts='tmux new-session -s'
+alias tl='tmux list-sessions'
+alias td='tmux detach'
+alias tksv='tmux kill-server'
+alias tkss='tmux kill-session -t'
 
 # git
 alias ga='git add'

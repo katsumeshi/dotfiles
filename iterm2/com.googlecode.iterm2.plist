@@ -1124,13 +1124,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.564697265625</real>
+				<real>1</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.41387824578109944</real>
+				<real>0.54996763604771359</real>
 				<key>Red Component</key>
-				<real>0.304191704839468</real>
+				<real>0.2226715087890625</real>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
@@ -1161,6 +1161,8 @@
 			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Use Tab Color</key>
+			<false/>
+			<key>Use Underline Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
