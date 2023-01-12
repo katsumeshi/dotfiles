@@ -20,6 +20,7 @@ null_ls.setup({
 		diagnostics.codespell,
 		diagnostics.fish,
 		diagnostics.jsonlint,
+		diagnostics.tidy,
 	},
 	-- configure format on save
 	on_attach = function(current_client, bufnr)
