@@ -18,14 +18,14 @@ map.set("n", "<leader>tw", ":tabclose<CR>")
 map.set("n", "<leader>tn", ":tabn<CR>")
 map.set("n", "<leader>tp", ":tabp<CR>")
 
-map.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+map.set("n", "<leader>e", ":Neotree<CR>")
 
 -- telescope
 map.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
 map.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>")
 map.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
-map.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
-map.set("n", "<leader>fe", "<cmd>Telescope file_browser<cr>")
+map.set("n", "<leader>f?", "<cmd>Telescope help_tags<cr>")
+map.set("n", "<leader>fh", "<<cmd>Telescope find_files hidden=true<cr>")
 
 -- telescope git commands
 map.set("n", "<leader>gc", "<cmd>Telescope git_commits<cr>")

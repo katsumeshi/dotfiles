@@ -24,6 +24,8 @@ brew "lazygit"
 brew "tmux"
 brew "codespell"
 brew "neovim"
+brew "lf"
+brew "zoxide"
 
 # altnatives
 brew "bat"

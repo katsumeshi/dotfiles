@@ -43,7 +43,7 @@ alias rmac='source ~/.macos'
 alias rsym='sh ~/.symlinks'
 alias rall='rsym && r && rmac'
 
-# 1 charactor
+# 1 character
 alias a='alias'
 alias c="clear"
 alias f="find . -iname"
@@ -89,3 +89,4 @@ alias vim='nvim'
 alias ls='exa'
 
 starship init fish | source
+zoxide init fish | source
