@@ -97,7 +97,7 @@ return packer.startup(function(use)
 	use("f-person/git-blame.nvim")
 	use("dinhhuy258/git.nvim")
 
-	use("lukas-reineke/indent-blankline.nvim")
+	-- use("lukas-reineke/indent-blankline.nvim")
 	use("akinsho/bufferline.nvim")
 
 	-- flutter
