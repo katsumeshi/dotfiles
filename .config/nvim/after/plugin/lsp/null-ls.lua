@@ -16,11 +16,9 @@ null_ls.setup({
 	sources = {
 		formatting.prettier,
 		formatting.stylua,
-		diagnostics.eslint_d,
+		diagnostics.eslint,
 		diagnostics.codespell,
 		diagnostics.fish,
-		diagnostics.jsonlint,
-		diagnostics.tidy,
 	},
 	-- configure format on save
 	on_attach = function(current_client, bufnr)
