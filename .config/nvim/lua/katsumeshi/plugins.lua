@@ -35,7 +35,10 @@ return packer.startup(function(use)
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 
 	-- color scheme
-	use("EdenEast/nightfox.nvim")
+	-- use("EdenEast/nightfox.nvim")
+	use({
+		"rose-pine/neovim",
+	})
 
 	-- use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use("nvim-lualine/lualine.nvim")
@@ -97,7 +100,7 @@ return packer.startup(function(use)
 	use("f-person/git-blame.nvim")
 	use("dinhhuy258/git.nvim")
 
-	-- use("lukas-reineke/indent-blankline.nvim")
+	use("lukas-reineke/indent-blankline.nvim")
 	use("akinsho/bufferline.nvim")
 
 	-- flutter
