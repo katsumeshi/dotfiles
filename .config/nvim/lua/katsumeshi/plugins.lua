@@ -35,10 +35,7 @@ return packer.startup(function(use)
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 
 	-- color scheme
-	-- use("EdenEast/nightfox.nvim")
-	use({
-		"rose-pine/neovim",
-	})
+	use({ "catppuccin/nvim", as = "catppuccin" })
 
 	-- use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use("nvim-lualine/lualine.nvim")
