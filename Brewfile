@@ -14,7 +14,6 @@ cask "postman"
 brew "git-delta"
 
 # terminal
-cask "iterm2"
 brew "starship"
 brew "fish"
 brew "fzf"
@@ -26,6 +25,8 @@ brew "codespell"
 brew "neovim"
 brew "lf"
 brew "zoxide"
+cask "iterm2"
+cask "alacritty"
 
 # altnatives
 brew "bat"
