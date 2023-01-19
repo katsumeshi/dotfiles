@@ -8,8 +8,8 @@
 #
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
-#import:
-#  - /path/to/alacritty.yml
+import:
+  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
 
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
@@ -23,52 +23,52 @@ env:
   # available, otherwise `xterm-256color` is used.
   TERM: alacritty
 
-#window:
-# Window dimensions (changes require restart)
-#
-# Number of lines/columns (not pixels) in the terminal. Both lines and columns
-# must be non-zero for this to take effect. The number of columns must be at
-# least `2`, while using a value of `0` for columns and lines will fall back
-# to the window manager's recommended size
-#dimensions:
-#  columns: 0
-#  lines: 0
+window:
+  # Window dimensions (changes require restart)
+  #
+  # Number of lines/columns (not pixels) in the terminal. Both lines and columns
+  # must be non-zero for this to take effect. The number of columns must be at
+  # least `2`, while using a value of `0` for columns and lines will fall back
+  # to the window manager's recommended size
+  #dimensions:
+  #  columns: 0
+  #  lines: 0
 
-# Window position (changes require restart)
-#
-# Specified in number of pixels.
-# If the position is not set, the window manager will handle the placement.
-#position:
-#  x: 0
-#  y: 0
+  # Window position (changes require restart)
+  #
+  # Specified in number of pixels.
+  # If the position is not set, the window manager will handle the placement.
+  #position:
+  #  x: 0
+  #  y: 0
 
-# Window padding (changes require restart)
-#
-# Blank space added around the window in pixels. This padding is scaled
-# by DPI and the specified value is always added at both opposing sides.
-#padding:
-#  x: 0
-#  y: 0
+  # Window padding (changes require restart)
+  #
+  # Blank space added around the window in pixels. This padding is scaled
+  # by DPI and the specified value is always added at both opposing sides.
+  padding:
+    x: 5
+    y: 5
 
-# Spread additional padding evenly around the terminal content.
-#dynamic_padding: false
+  # Spread additional padding evenly around the terminal content.
+  #dynamic_padding: false
 
-# Window decorations
-#
-# Values for `decorations`:
-#     - full: Borders and title bar
-#     - none: Neither borders nor title bar
-#
-# Values for `decorations` (macOS only):
-#     - transparent: Title bar, transparent background and title bar buttons
-#     - buttonless: Title bar, transparent background and no title bar buttons
-#decorations: full
+  # Window decorations
+  #
+  # Values for `decorations`:
+  #     - full: Borders and title bar
+  #     - none: Neither borders nor title bar
+  #
+  # Values for `decorations` (macOS only):
+  #     - transparent: Title bar, transparent background and title bar buttons
+  #     - buttonless: Title bar, transparent background and no title bar buttons
+  decorations: buttonless
 
-# Background opacity
-#
-# Window opacity as a floating point number from `0.0` to `1.0`.
-# The value `0.0` is completely transparent and `1.0` is opaque.
-#opacity: 1.0
+  # Background opacity
+  #
+  # Window opacity as a floating point number from `0.0` to `1.0`.
+  # The value `0.0` is completely transparent and `1.0` is opaque.
+  opacity: 0.85
 
 # Startup Mode (changes require restart)
 #
@@ -107,7 +107,7 @@ scrolling:
   history: 10000
 
   # Scrolling distance multiplier.
-  multiplier: 3
+  multiplier: 10
 
 # Font configuration
 font:
@@ -159,7 +159,6 @@ font:
 
   # Point size
   size: 13.0
-
 # Offset is the extra space around each character. `offset.y` can be thought
 # of as modifying the line spacing, and `offset.x` as modifying the letter
 # spacing.
@@ -182,8 +181,7 @@ font:
 #builtin_box_drawing: true
 
 # If `true`, bold text is drawn using the bright color variants.
-#draw_bold_text_with_bright_colors: false
-
+draw_bold_text_with_bright_colors: true
 # Colors (Tomorrow Night)
 #colors:
 # Default colors
@@ -331,7 +329,7 @@ font:
 # Whether or not `window.opacity` applies to all cell backgrounds or only to
 # the default background. When set to `true` all cells will be transparent
 # regardless of their background color.
-transparent_background_colors: true
+# transparent_background_colors: true
 # Bell
 #
 # The bell is rung every time the BEL control character is received.

@@ -57,5 +57,6 @@ brew "hugo"
 brew "go"
 
 # fonts
-cask "font-hack-nerd-font"
 cask "font-fira-code-nerd-font"
+cask "font-jetbrains-mono-nerd-font"
+cask "font-caskaydia-cove-nerd-font"
