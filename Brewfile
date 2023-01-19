@@ -58,3 +58,4 @@ brew "go"
 
 # fonts
 cask "font-hack-nerd-font"
+cask "font-fira-code-nerd-font"

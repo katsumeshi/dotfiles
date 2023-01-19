@@ -9,6 +9,7 @@ neotree.setup({
 		filtered_items = {
 			show_hidden_count = false,
 			hide_dotfiles = false,
+			hide_gitignored = false,
 		},
 		use_libuv_file_watcher = true,
 	},
