@@ -27,6 +27,7 @@ brew "lf"
 brew "zoxide"
 cask "iterm2"
 cask "alacritty"
+brew "gotop"
 
 # altnatives
 brew "bat"
