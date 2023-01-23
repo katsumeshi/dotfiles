@@ -6,9 +6,6 @@
 .config/configstore
 .config/nvim/plugin/
 
-# .config/fish/functions/
-# .config/fish/conf.d/
-# .config/fish/completions/
 .config/fish/fish_variables
 
 .config/flutter
