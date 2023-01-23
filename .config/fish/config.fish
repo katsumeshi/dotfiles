@@ -4,12 +4,6 @@ fish_add_path /opt/homebrew/bin
 set -U FZF_LEGACY_KEYBINDINGS 0
 set -U FZF_REVERSE_ISEARCH_OPTS "--reverse --height=100%"
 
-# enhancd
-set -x ENHANCD_FILTER fzf
-
-# color scheme
-source ~/.config/fish/themes/nightfox.fish
-
 # geneal
 set -x TERM xterm-256color
 set -x DOTFILES_PATH $HOME/dotfiles
