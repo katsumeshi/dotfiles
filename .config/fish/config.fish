@@ -1,8 +1,10 @@
 fish_add_path /opt/homebrew/bin
 
 # fzf
-set -U FZF_LEGACY_KEYBINDINGS 0
-set -U FZF_REVERSE_ISEARCH_OPTS "--reverse --height=100%"
+fzf_configure_bindings --directory=\cf
+fzf_configure_bindings --git_log=\cg
+fzf_configure_bindings --git_status=\cs
+fzf_configure_bindings --processes=\cp
 
 # geneal
 set -x TERM xterm-256color
@@ -49,7 +51,6 @@ alias n='npm'
 alias h="history"
 alias r="source ~/.config/fish/config.fish"
 alias v='vim'
-# alias z="nvim ~/.zshrc"
 
 # tmux
 alias ta='tmux attach -t'
@@ -89,6 +90,7 @@ alias find='fd'
 alias grep='rg'
 alias vim='nvim'
 alias ls='exa'
+
 
 starship init fish | source
 zoxide init fish | source
