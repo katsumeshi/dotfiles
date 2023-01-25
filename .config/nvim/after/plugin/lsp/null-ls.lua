@@ -14,11 +14,14 @@ local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 null_ls.setup({
 	sources = {
-		formatting.prettier,
+		formatting.prettierd,
 		formatting.stylua,
-		diagnostics.eslint,
+		diagnostics.eslint.with({
+			diagnostics_format = "[eslint] #{m}\n(#{c})",
+		}),
 		diagnostics.codespell,
 		diagnostics.fish,
+		diagnostics.jsonlint,
 	},
 	-- configure format on save
 	on_attach = function(current_client, bufnr)
