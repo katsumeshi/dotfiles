@@ -14,7 +14,7 @@ local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 null_ls.setup({
 	sources = {
-		formatting.prettierd,
+		formatting.prettier,
 		formatting.stylua,
 		diagnostics.eslint.with({
 			diagnostics_format = "[eslint] #{m}\n(#{c})",
