@@ -22,6 +22,8 @@ null_ls.setup({
 		diagnostics.codespell,
 		diagnostics.fish,
 		diagnostics.jsonlint,
+		diagnostics.revive, -- go
+		formatting.gofumpt,
 	},
 	-- configure format on save
 	on_attach = function(current_client, bufnr)

@@ -76,10 +76,9 @@ lspconfig["cssls"].setup({
 	on_attach = on_attach,
 })
 
-lspconfig["dartls"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
+-- lspconfig["dartls"].setup({
+-- 	capabilities = capabilities,
+-- 	on_attach = on_attach,
 
 -- configure lua server (with special settings)
 lspconfig["sumneko_lua"].setup({
@@ -98,6 +97,22 @@ lspconfig["sumneko_lua"].setup({
 					[vim.fn.stdpath("config") .. "/lua"] = true,
 				},
 			},
+		},
+	},
+})
+
+local util = require("lspconfig/util")
+
+lspconfig.gopls.setup({
+	cmd = { "gopls", "serve" },
+	filetypes = { "go", "gomod" },
+	root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+	settings = {
+		gopls = {
+			analyses = {
+				unusedparams = true,
+			},
+			staticcheck = true,
 		},
 	},
 })

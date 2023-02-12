@@ -28,6 +28,7 @@ brew "zoxide"
 cask "iterm2"
 cask "alacritty"
 brew "gotop"
+brew "helix"
 
 # altnatives
 brew "bat"
@@ -59,5 +60,3 @@ brew "go"
 
 # fonts
 cask "font-fira-code-nerd-font"
-cask "font-jetbrains-mono-nerd-font"
-cask "font-caskaydia-cove-nerd-font"

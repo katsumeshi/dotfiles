@@ -101,8 +101,8 @@ return packer.startup(function(use)
 	use("akinsho/bufferline.nvim")
 
 	-- flutter
-	use("dart-lang/dart-vim-plugin")
-	use("thosakwe/vim-flutter")
+	-- use("dart-lang/dart-vim-plugin")
+	-- use("thosakwe/vim-flutter")
 
 	-- use({
 	-- 	"phaazon/hop.nvim",
