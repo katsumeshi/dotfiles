@@ -26,7 +26,7 @@
 [github]
 	user = katsumeshi
 [pull]
-    ff = only
+    rebase = true
 [rebase]
   autosquash = true
 
