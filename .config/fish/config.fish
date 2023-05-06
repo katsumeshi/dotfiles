@@ -10,17 +10,19 @@ fzf_configure_bindings --processes=\cp
 set -x TERM xterm-256color
 set -x DOTFILES_PATH $HOME/dotfiles
 set -x SCREENSHOTS_PATH $HOME/screenshots
-set -x VOLTA_HOME $HOME/.volta
-set -x PATH $VOLTA_HOME/bin:$PATH
+set -x VOLTA $HOME/.volta
+set -x PATH $HOME/.volta/bin:$HOME/.local/bin:$PATH
 
 # android - react native
 set -x ANDROID_SDK_ROOT $HOME/Library/Android/sdk
 set -x PATH $PATH:$ANDROID_SDK_ROOT/emulator
 set -x PATH $PATH:$ANDROID_SDK_ROOT/platform-tools
 
+set -x GOPATH $HOME/go
+set -x PATH $PATH:(go env GOPATH)/bin
 # work -------------------------
 
-set -x GH_TOKEN $(gcloud secrets versions access latest --secret="AO-Github" --project=agents-only-dev)
+set -x GH_TOKEN (gcloud secrets versions access latest --secret="AO-Github" --project=agents-only-dev)
 
 # alias ------------------------
 

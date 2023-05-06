@@ -1,42 +1,30 @@
 {
-  "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono, Menlo, Monaco, 'Courier New', monospace",
   "explorer.confirmDelete": false,
   "redhat.telemetry.enabled": true,
-  "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "workbench.colorTheme": "Catppuccin Mocha",
-  "terminal.integrated.profiles.osx": {
-    "fish": {
-      "path": "/opt/homebrew/bin/fish",
-      "args": ["-l"]
-    }
-  },
+  // "terminal.integrated.profiles.osx": {
+  //   "fish": {
+  //     "path": "/opt/homebrew/bin/fish",
+  //     "args": ["-l"]
+  //   }
+  // },
   "terminal.integrated.defaultProfile.osx": "fish",
-  "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
-  },
-  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
-  "vscode-neovim.neovimInitVimPaths.darwin": "Users/katsumeshi/.config/nvim/init.vim",
-  "vscode-neovim.highlightGroups.highlights": {
-    "Directory": "vim",
-    "IncSearch": {
-      "backgroundColor": "theme.editor.findMatchBackground",
-      "borderColor": "theme.editor.findMatchBorder"
-    },
-    "Search": {
-      "backgroundColor": "theme.editor.findMatchHighlightBackground",
-      "borderColor": "theme.editor.findMatchHighlightBorder"
-    },
-    "Visual": {
-      "backgroundColor": "theme.editor.selectionBackground"
-    },
-    "Conceal": "vim",
-    "Substitute": "vim"
-  },
   "editor.fontFamily": "FiraCode Nerd Font Mono, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 13
+  "editor.fontSize": 13,
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "editor.formatOnSave": true,
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "debug.javascript.autoAttachFilter": "disabled",
+  "go.toolsGopath": "/opt/homebrew/Cellar/go/1.20.1/libexec",
+  "[sql]": {},
+  "workbench.colorCustomizations": {},
+  "genieai.openai.model": "gpt-3.5-turbo-0301",
+  "genieai.enableConversationHistory": true
 }

@@ -20,8 +20,11 @@ name = "typescript"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
 
+
 [[language]]
 name = "tsx"
+file-types = ["tsx"]
+language-server = { command = "typescript-language-server", args = ["--stdio"], language-id = "typescriptreact" }
 formatter = { command = 'prettier', args = ["--stdin-filepath", "file.tsx"] }
 auto-format = true
 
