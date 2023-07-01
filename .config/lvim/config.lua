@@ -1,7 +1,6 @@
---[[
- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
- `lvim` is the global options object
-]]
+-- -[[
+--  THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
+--  `lvim` is the global options object
 
 -- vim options
 vim.opt.shiftwidth = 2
@@ -11,6 +10,7 @@ vim.opt.shell = "/bin/sh"
 
 -- general
 lvim.log.level = "info"
+lvim.transparent_window = true
 lvim.format_on_save = {
 	enabled = true,
 	-- pattern = "*.lua",
@@ -32,7 +32,7 @@ lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 -- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
 -- -- Change theme settings
--- lvim.colorscheme = "lunar"
+lvim.colorscheme = "onedark"
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
@@ -83,6 +83,7 @@ formatters.setup({
 		command = "prettier",
 		filetypes = { "typescript", "typescriptreact" },
 	},
+	{ command = "goimports", filetypes = { "go" } },
 })
 local linters = require("lvim.lsp.null-ls.linters")
 linters.setup({
@@ -103,12 +104,15 @@ linters.setup({
 -- }
 
 -- -- Additional Plugins <https://www.lunarvim.org/docs/configuration/plugins/user-plugins>
--- lvim.plugins = {
---     {
---       "folke/trouble.nvim",
---       cmd = "TroubleToggle",
---     },
--- }
+lvim.plugins = {
+	{
+		"navarasu/onedark.nvim",
+	},
+	--     {
+	--       "folke/trouble.nvim",
+	--       cmd = "TroubleToggle",
+	--     },
+}
 
 -- -- Autocommands (`:help autocmd`) <https://neovim.io/doc/user/autocmd.html>
 -- vim.api.nvim_create_autocmd("FileType", {

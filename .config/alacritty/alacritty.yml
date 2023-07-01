@@ -12,7 +12,7 @@ window:
     x: 5
     y: 5
   decorations: buttonless
-  opacity: 0.85
+  opacity: 0.9
 scrolling:
   history: 10000
   multiplier: 10
