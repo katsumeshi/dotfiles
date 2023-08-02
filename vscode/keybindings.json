@@ -1,13 +1,65 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-    {
-        "key": "alt+t",
-        "command": "workbench.action.terminal.toggleTerminal",
-        "when": "terminal.active"
-    },
-    {
-        "key": "ctrl+`",
-        "command": "-workbench.action.terminal.toggleTerminal",
-        "when": "terminal.active"
-    }
+  {
+    "key": "ctrl+a t",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+a o",
+    "command": "workbench.action.openRecent"
+  },
+
+  // window
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+      "key": "ctrl+l",
+      "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "ctrl+k",
+      "command": "workbench.action.navigateUp"
+  },
+  {
+      "key": "ctrl+j",
+      "command": "workbench.action.navigateDown"
+  },
+
+  // tab
+  {
+    "key": "ctrl+]",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "workbench.action.previousEditor"
+  },
+
+  // pane
+  {
+    "key": "ctrl+a shift+\\",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "ctrl+a shift+-",
+    "command": "workbench.action.splitEditorDown"
+  }
+
+  // neovim setting
+  {
+    "command": "vscode-neovim.compositeEscape1",
+    "key": "j",
+    "when": "neovim.mode == insert && editorTextFocus",
+    "args": "j"
+  },
+  {
+    "command": "vscode-neovim.compositeEscape2",
+    "key": "k",
+    "when": "neovim.mode == insert && editorTextFocus",
+    "args": "k"
+  }
+
 ]
