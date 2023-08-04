@@ -7,5 +7,7 @@
     "asvetliakov.vscode-neovim": 1
   },
   "workbench.colorCustomizations": {},
-  "svelte.enable-ts-plugin": true
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "githubPullRequests.pullBranch": "never"
 }
