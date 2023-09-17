@@ -54,6 +54,7 @@ cask "bitwarden"
 cask "maccy"
 cask "stats"
 cask "karabiner-elements"
+cask "dozer"
 
 # blog
 brew "hugo"
