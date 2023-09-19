@@ -2,7 +2,7 @@
 tap 'homebrew/cask'
 tap "homebrew/cask-fonts"
 
-cask_args appdir: "~/Applications"
+cask_args appdir: "/Applications"
 
 # develop
 brew "git"
@@ -55,6 +55,8 @@ cask "maccy"
 cask "stats"
 cask "karabiner-elements"
 cask "dozer"
+cask "librewolf"
+cask "appcleaner"
 
 # blog
 brew "hugo"

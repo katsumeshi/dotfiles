@@ -9,7 +9,23 @@
     "key": "ctrl+a o",
     "command": "workbench.action.openRecent"
   },
-
+  {
+    "key": "ctrl+a f", // focus file in explorer
+    "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+  {
+    "key": "ctrl+a e",
+    "command": "workbench.view.extensions"
+  },
+  {
+    "key": "ctrl+a r", // replace project
+    "command": "workbench.action.replaceInFiles"
+  },
+  {
+    "key": "ctrl+a .",
+    "command": "keyboard-quickfix.openQuickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
   // window
   {
     "key": "ctrl+h",
@@ -26,6 +42,14 @@
   {
     "key": "ctrl+j",
     "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "list.focusDown"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "list.focusUp"
   },
 
   // tab

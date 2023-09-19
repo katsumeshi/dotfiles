@@ -11,3 +11,5 @@
 .config/flutter
 .config/karabiner/assets/complex_modifications
 .config/karabiner/automatic_backups
+.config/darktable
+.config/.mono
