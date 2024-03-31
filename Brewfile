@@ -1,5 +1,5 @@
-
-tap 'homebrew/cask'
+# Error: Tapping homebrew/cask is no longer typically necessary.
+# tap 'homebrew/cask'
 tap "homebrew/cask-fonts"
 
 cask_args appdir: "/Applications"
@@ -33,7 +33,7 @@ brew "bat"
 brew "fd"
 brew "ripgrep"
 brew "sd"
-brew "exa"
+brew "eza"
 
 # work
 cask "zoom"

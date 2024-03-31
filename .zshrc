@@ -71,7 +71,7 @@ alias cat='bat'
 alias find='fd'
 alias grep='rg'
 alias vim='nvim'
-alias ls='exa'
+alias ls='eza'
 
 # zsh-completions
 if type brew &>/dev/null; then

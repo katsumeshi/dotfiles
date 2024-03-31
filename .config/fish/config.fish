@@ -92,7 +92,7 @@ alias cat='bat'
 alias find='fd'
 alias grep='rg'
 alias vim='nvim'
-alias ls='exa'
+alias ls='eza'
 
 
 starship init fish | source
