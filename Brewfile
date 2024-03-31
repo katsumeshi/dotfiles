@@ -57,6 +57,7 @@ cask "karabiner-elements"
 cask "dozer"
 cask "librewolf"
 cask "appcleaner"
+cask "shottr"
 
 # blog
 brew "hugo"
