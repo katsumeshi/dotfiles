@@ -7,7 +7,16 @@ return {
     vim.g.loaded_netrw = 1
     vim.g.loaded_netrwPlugin = 1
 
-    n.setup({})
+    n.setup({
+      view = {
+        relativenumber = true,
+      },
+      renderer = {
+        indent_markers = {
+          enable = true,
+        },
+      }
+    })
 
     local k = vim.keymap
 
