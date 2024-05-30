@@ -20,9 +20,11 @@ set -x PATH $PATH:$ANDROID_SDK_ROOT/platform-tools
 
 set -x GOPATH $HOME/go
 set -x PATH $PATH:(go env GOPATH)/bin
-# work -------------------------
 
-set -x GH_TOKEN (gcloud secrets versions access latest --secret="AO-Github" --project=agents-only-dev)
+# work -------------------------
+if status is-interactive
+  set -x GH_TOKEN (gcloud secrets versions access latest --secret="AO-Github" --project=agents-only-dev)
+end
 
 # alias ------------------------
 

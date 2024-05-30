@@ -1,6 +1,6 @@
 {
   "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontFamily": "FiraCode Nerd Font Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "JetBrainsMono Nerd Font, FiraCode Nerd Font Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 13,
   "workbench.colorTheme": "One Dark Pro Darker",
   "extensions.experimental.affinity": {
@@ -16,7 +16,7 @@
   "typescript.referencesCodeLens.enabled": true,
   "typescript.referencesCodeLens.showOnAllFunctions": true,
   "typescript.implementationsCodeLens.enabled": true,
-  "debug.javascript.autoAttachFilter": "always",
+  "debug.javascript.autoAttachFilter": "disabled",
 
   "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
   "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim/init.lua",
@@ -163,5 +163,8 @@
   },
   "githubPullRequests.pullBranch": "never",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "explorer.confirmDragAndDrop": false
+  "explorer.confirmDragAndDrop": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "editor.fontLigatures": true,
+  "editor.letterSpacing": 0
 }

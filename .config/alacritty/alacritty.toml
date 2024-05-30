@@ -18,19 +18,23 @@ TERM = "alacritty"
 size = 13.0
 
 [font.bold]
-family = "FiraCode Nerd Font Mono"
+family = "JetBrainsMono Nerd Font"
+# family = "FiraCode Nerd Font Mono"
 style = "Bold"
 
 [font.bold_italic]
-family = "FiraCode Nerd Font Mono"
+family = "JetBrainsMono Nerd Font"
+# family = "FiraCode Nerd Font Mono"
 style = "Bold Italic"
 
 [font.italic]
-family = "FiraCode Nerd Font Mono"
+family = "JetBrainsMono Nerd Font"
+# family = "FiraCode Nerd Font Mono"
 style = "Italic"
 
 [font.normal]
-family = "FiraCode Nerd Font Mono"
+family = "JetBrainsMono Nerd Font"
+# family = "FiraCode Nerd Font Mono"
 style = "Regular"
 
 # [[keyboard.bindings]]
@@ -414,7 +418,7 @@ multiplier = 10
 
 [window]
 decorations = "buttonless"
-opacity = 0.9
+opacity = 0.97
 
 [window.dimensions]
 columns = 150
