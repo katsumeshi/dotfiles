@@ -1405,7 +1405,7 @@
         }
       },
       "notion": {
-        "version": "3.8.1",
+        "version": "3.9.0",
         "options": {
           "full_name": "notion",
           "args": {
@@ -1495,7 +1495,7 @@
         }
       },
       "google-cloud-sdk": {
-        "version": "477.0.0",
+        "version": "478.0.0",
         "options": {
           "full_name": "google-cloud-sdk",
           "args": {
@@ -1534,6 +1534,15 @@
         "version": "1.7.2",
         "options": {
           "full_name": "shottr",
+          "args": {
+            "appdir": "/Applications"
+          }
+        }
+      },
+      "font-monaspace-nerd-font": {
+        "version": "3.2.1",
+        "options": {
+          "full_name": "font-monaspace-nerd-font",
           "args": {
             "appdir": "/Applications"
           }

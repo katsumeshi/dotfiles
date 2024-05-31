@@ -1,6 +1,6 @@
 {
   "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontFamily": "JetBrainsMono Nerd Font, FiraCode Nerd Font Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "FiraCode Nerd Font, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 13,
   "workbench.colorTheme": "One Dark Pro Darker",
   "extensions.experimental.affinity": {

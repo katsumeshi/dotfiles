@@ -61,4 +61,5 @@ brew "go"
 
 # fonts
 cask "font-fira-code-nerd-font"
-cask "font-jetbrains-mono-nerd-font"
+cask "font-monaspace-nerd-font"
+# cask "font-jetbrains-mono-nerd-font"
