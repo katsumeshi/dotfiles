@@ -6,7 +6,7 @@ return {
 
 		l.setup({
 			options = {
-				theme = "catppuccin",
+				theme = "tokyonight",
 				-- ... the rest of your lualine config
 			},
 			sections = {

@@ -1,21 +1,31 @@
 add_newline = false
 
-[time]
-disabled = false
-format = '[$time]($style) '
+[directory]
+style = "fg:#bb9af7"
 
 [git_branch]
+style = "fg:#7aa2f7"
 format = '[$symbol$branch(:$remote_branch)]($style) '
-symbol = '🌱 '
+symbol = ' '
 truncation_length = 20
 
 [git_commit]
+style = "fg:#565f89"
 commit_hash_length = 7
-tag_symbol = '🔖 '
+
+[git_status]
+style="fg:#7dcfff"
 
 [gcloud]
+style = "fg:#a9b1d6"
 format = '[$symbol($project)]($style) '
 symbol = ' '
 
 [nodejs]
+style="fg:#9ece6a"
 format = '[$symbol($version )]($style)'
+
+[time]
+style="fg:#e0af68"
+disabled = false
+format = '[$time]($style) '

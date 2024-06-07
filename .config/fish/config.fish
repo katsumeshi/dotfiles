@@ -12,6 +12,7 @@ set -x DOTFILES_PATH $HOME/dotfiles
 set -x SCREENSHOTS_PATH $HOME/screenshots
 set -x VOLTA $HOME/.volta
 set -x PATH $HOME/.volta/bin:$HOME/.local/bin:$PATH
+set -x XDG_CONFIG_HOME $HOME/.config
 
 # android - react native
 set -x ANDROID_SDK_ROOT $HOME/Library/Android/sdk
