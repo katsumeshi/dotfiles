@@ -7,8 +7,8 @@ return {
 		"rcarriga/nvim-notify",
 	},
 	config = function()
-		local noice
-		noice = noice.setup({
+		local noice = require("noice")
+		noice.setup({
 			views = {
 				notify = { replace = true },
 			},
