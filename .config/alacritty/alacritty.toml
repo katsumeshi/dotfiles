@@ -419,6 +419,7 @@ multiplier = 10
 [window]
 decorations = "buttonless"
 opacity = 0.97
+option_as_alt = "Both"
 
 [window.dimensions]
 columns = 150
