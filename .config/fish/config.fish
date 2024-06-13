@@ -1,10 +1,13 @@
 fish_add_path /opt/homebrew/bin
 
 # fzf
-fzf_configure_bindings --directory=\cf
-fzf_configure_bindings --git_log=\cg
-fzf_configure_bindings --git_status=\cs
-fzf_configure_bindings --processes=\cp
+fzf_configure_bindings \
+    --history=\cr \
+    --variables=\cv \
+    --git_log=\cl \
+    --git_status=\cs \
+    --processes=\cp \
+    --directory=\cf
 
 # geneal
 set -x TERM xterm-256color
@@ -49,7 +52,7 @@ alias rall='rsym && r && rmac'
 alias a='alias'
 alias c="clear"
 alias f="find . -iname"
-alias g='lazygit'
+alias g='git'
 alias l='nnn'
 alias p='pwd'
 alias m='mkdir'
@@ -81,6 +84,7 @@ alias gf='git fetch'
 alias gc='git commit'
 alias gt='git t'
 alias gta='git ta'
+alias lg='lazygit'
 
 # cd
 alias ..='cd ..'
@@ -88,7 +92,6 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
-
 
 # altnatives
 alias cat='bat'
