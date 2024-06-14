@@ -25,8 +25,9 @@ brew "codespell"
 brew "neovim"
 brew "zoxide"
 cask "alacritty"
-brew "gotop"
-brew "nnn"
+brew "btop"
+brew "dust"
+brew "yazi"
 
 # altnatives
 brew "bat"
