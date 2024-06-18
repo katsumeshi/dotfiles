@@ -8,41 +8,42 @@ return {
 		"folke/todo-comments.nvim",
 	},
 	config = function()
-		local t = require("telescope")
-		local a = require("telescope.actions")
+		local telescope = require("telescope")
+		local actions = require("telescope.actions")
 
-		t.setup({
+		telescope.setup({
 			defaults = {
 				path_display = { "absolute" }, -- "smart"
 				mappings = {
 					i = {
-						["<C-k>"] = a.move_selection_previous, -- move to prev result
-						["<C-j>"] = a.move_selection_next, -- move to next result
-						["<C-q>"] = a.send_selected_to_qflist + a.open_qflist,
+						["<C-k>"] = actions.move_selection_previous, -- move to prev result
+						["<C-j>"] = actions.move_selection_next, -- move to next result
+						["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+						["<c-d>"] = actions.delete_buffer + actions.move_to_top,
 					},
 				},
 			},
 		})
 
-		t.load_extension("fzf")
+		telescope.load_extension("fzf")
 
-		local k = vim.keymap -- for conciseness
+		local keymap = vim.keymap -- for conciseness
 
-		k.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
-		k.set("n", "<leader>fo", "<cmd>Telescope oldfiles<cr>", { desc = "Find old files" })
-		k.set("n", "<leader>fw", "<cmd>Telescope live_grep<cr>", { desc = "Find word" })
-		k.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Fins todos" })
-		k.set("n", "<leader>fj", "<cmd>Telescope jumplist<cr>", { desc = "Find jumplist" })
-		k.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Find buffers" })
-		k.set("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", { desc = "Find keymaps" })
-		k.set("n", "<leader>fr", "<cmd>Telescope registers<cr>", { desc = "Find registers" })
-		k.set("n", "<leader>fq", "<cmd>Telescope quickfix<cr>", { desc = "Find quickfix" })
-		k.set("n", "<leader>fm", "<cmd>Telescope marks<cr>", { desc = "Find marks" })
-		k.set("n", "<leader>fgc", "<cmd>Telescope git_commits<cr>", { desc = "Find git commits" })
-		k.set("n", "<leader>fgC", "<cmd>Telescope git_bcommits<cr>", { desc = "Find git buffers commits" })
-		k.set("n", "<leader>fgb", "<cmd>Telescope git_branches<cr>", { desc = "Find git branchs" })
-		k.set("n", "<leader>fgs", "<cmd>Telescope git_status<cr>", { desc = "Find git status" })
-		k.set(
+		keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
+		keymap.set("n", "<leader>fo", "<cmd>Telescope oldfiles<cr>", { desc = "Find old files" })
+		keymap.set("n", "<leader>fw", "<cmd>Telescope live_grep<cr>", { desc = "Find word" })
+		keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Fins todos" })
+		keymap.set("n", "<leader>fj", "<cmd>Telescope jumplist<cr>", { desc = "Find jumplist" })
+		keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Find buffers" })
+		keymap.set("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", { desc = "Find keymaps" })
+		keymap.set("n", "<leader>fr", "<cmd>Telescope registers<cr>", { desc = "Find registers" })
+		keymap.set("n", "<leader>fq", "<cmd>Telescope quickfix<cr>", { desc = "Find quickfix" })
+		keymap.set("n", "<leader>fm", "<cmd>Telescope marks<cr>", { desc = "Find marks" })
+		keymap.set("n", "<leader>fgc", "<cmd>Telescope git_commits<cr>", { desc = "Find git commits" })
+		keymap.set("n", "<leader>fgC", "<cmd>Telescope git_bcommits<cr>", { desc = "Find git buffers commits" })
+		keymap.set("n", "<leader>fgb", "<cmd>Telescope git_branches<cr>", { desc = "Find git branchs" })
+		keymap.set("n", "<leader>fgs", "<cmd>Telescope git_status<cr>", { desc = "Find git status" })
+		keymap.set(
 			"n",
 			"<leader>f/",
 			"<cmd>Telescope current_buffer_fuzzy_find<cr>",
