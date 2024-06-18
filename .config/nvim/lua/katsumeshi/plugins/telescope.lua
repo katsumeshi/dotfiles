@@ -13,7 +13,7 @@ return {
 
 		t.setup({
 			defaults = {
-				path_display = { "smart" },
+				path_display = { "absolute" }, -- "smart"
 				mappings = {
 					i = {
 						["<C-k>"] = a.move_selection_previous, -- move to prev result
