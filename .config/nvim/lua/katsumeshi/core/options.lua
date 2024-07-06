@@ -38,3 +38,7 @@ o.splitright = true
 o.splitbelow = true
 
 -- opt.iskeyword.append("-") -- "-" becomes a part of the word
+
+o.spelllang = "en_us"
+o.spell = true
+o.spelloptions = "camel"
