@@ -28,7 +28,8 @@ cask "alacritty"
 brew "btop"
 brew "dust"
 brew "yazi"
-brew "tldr"
+brew "tealdeer"
+brew "jq"
 
 # altnatives
 brew "bat"
