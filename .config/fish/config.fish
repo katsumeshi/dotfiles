@@ -61,6 +61,10 @@ alias h="history"
 alias r="source ~/.config/fish/config.fish"
 alias v='nvim'
 
+# navigation
+alias cd='z'
+alias cdd='z -' # equivalent to cd -
+
 # tmux
 alias ta='tmux attach -t'
 alias ts='tmux new-session -s'
@@ -99,6 +103,9 @@ alias find='fd'
 alias grep='rg'
 alias vim='nvim'
 alias ls='eza'
+alias ll='eza -lhg'
+alias lla='eza -alhg'
+alias tree='eza --tree'
 
 
 starship init fish | source
