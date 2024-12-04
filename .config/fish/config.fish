@@ -61,9 +61,17 @@ alias h="history"
 alias r="source ~/.config/fish/config.fish"
 alias v='nvim'
 
+# man
+alias h='tldr'
+alias help='tldr'
+
 # navigation
 alias cd='z'
 alias cdd='z -' # equivalent to cd -
+
+# monitoring
+alias top='btop'
+alias t='btop'
 
 # tmux
 alias ta='tmux attach -t'

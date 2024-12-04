@@ -1,6 +1,7 @@
 # Error: Tapping homebrew/cask is no longer typically necessary.
 # tap 'homebrew/cask'
 tap "homebrew/cask-fonts"
+tap "nikitabobko/aerospace"
 
 cask_args appdir: "/Applications"
 
@@ -57,6 +58,7 @@ cask "karabiner-elements"
 cask "dozer"
 cask "appcleaner"
 cask "shottr"
+cask "aerospace"
 
 # blog
 brew "hugo"
