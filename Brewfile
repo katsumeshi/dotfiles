@@ -47,9 +47,10 @@ cask "figma"
 # general 
 cask "spotify"
 cask "google-chrome"
-cask "alfred"
+# cask "alfred"
+csak "raycast"
 cask "kindle"
-cask "swish"
+# cask "swish"
 cask "notion"
 cask "bitwarden"
 cask "maccy"
@@ -61,8 +62,8 @@ cask "shottr"
 cask "aerospace"
 
 # blog
-brew "hugo"
-brew "go"
+# brew "hugo"
+# brew "go"
 
 # fonts
 cask "font-fira-code-nerd-font"
