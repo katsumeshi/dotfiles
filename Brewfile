@@ -15,29 +15,29 @@ cask "postman"
 brew "git-delta"
 
 # terminal
-brew "starship"
-brew "fish"
-brew "fzf"
+# brew "starship" # migrate to nix
+# brew "fish" # migrate to nix
+# brew "fzf" # migrate to nix
 brew "fisher"
 brew "peco"
-brew "lazygit"
-brew "tmux"
+# brew "lazygit" # migrate to nix
+# brew "tmux" # migrate to nix
 brew "codespell"
-brew "neovim"
-brew "zoxide"
-cask "alacritty"
-brew "btop"
+# brew "neovim" # migrate to nix
+# brew "zoxide" # migrate to nix
+# cask "alacritty" # migrate to nix
+# brew "btop" # migrate to nix
 brew "dust"
-brew "yazi"
-brew "tealdeer"
-brew "jq"
+# brew "yazi"
+# brew "tealdeer" # migrate to nix
+# brew "jq" # migrate to nix
 
 # altnatives
-brew "bat"
-brew "fd"
-brew "ripgrep"
-brew "sd"
-brew "eza"
+# brew "bat" # migrate to nix
+# brew "fd" # migrate to nix
+# brew "ripgrep" # migrate to nix
+# brew "sd" # migrate to nix
+# brew "eza" # migrate to nix
 
 # work
 cask "zoom"
