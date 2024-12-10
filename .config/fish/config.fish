@@ -1,4 +1,4 @@
-fish_add_path /opt/homebrew/bin
+# fish_add_path /opt/homebrew/bin
 
 # fzf
 fzf_configure_bindings \
@@ -14,16 +14,16 @@ set -x TERM xterm-256color
 set -x DOTFILES_PATH $HOME/dotfiles
 set -x SCREENSHOTS_PATH $HOME/screenshots
 set -x VOLTA $HOME/.volta
-set -x PATH $HOME/.volta/bin:$HOME/.local/bin:$PATH
+# set -x PATH $HOME/.volta/bin:$HOME/.local/bin:$PATH
 set -x XDG_CONFIG_HOME $HOME/.config
 
 # android - react native
-set -x ANDROID_SDK_ROOT $HOME/Library/Android/sdk
-set -x PATH $PATH:$ANDROID_SDK_ROOT/emulator
-set -x PATH $PATH:$ANDROID_SDK_ROOT/platform-tools
+# set -x ANDROID_SDK_ROOT $HOME/Library/Android/sdk
+# set -x PATH $PATH:$ANDROID_SDK_ROOT/emulator
+# set -x PATH $PATH:$ANDROID_SDK_ROOT/platform-tools
 
-set -x GOPATH $HOME/go
-set -x PATH $PATH:(go env GOPATH)/bin
+# set -x GOPATH $HOME/go
+# set -x PATH $PATH:(go env GOPATH)/bin
 
 # work -------------------------
 if status is-interactive
